@@ -1,0 +1,6 @@
+venv/
+**/config.py
+*.pyc
+.vscode/launch.json
+.vscode/settings.json
+data/

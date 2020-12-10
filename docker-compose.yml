@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  bot:
+    build:
+      context: .
+    environment:
+      - TZ=Australia/Sydney
+    restart: unless-stopped
+    privileged: true
+    volumes:
+      - ./aoc-solve-bot-discord/data:/app/data
+
